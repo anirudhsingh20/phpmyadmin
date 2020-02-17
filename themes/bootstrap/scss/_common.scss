@@ -3864,7 +3864,6 @@ body .ui-dialog {
   vertical-align: baseline;
 }
 
-
 .ui_tpicker_hour_slider,
 .ui_tpicker_minute_slider,
 .ui_tpicker_second_slider,
@@ -3872,8 +3871,9 @@ body .ui-dialog {
 .ui_tpicker_microsec_slider {
   margin-left: 40px;
   margin-top: 4px;
-  height: .75rem;
+  height: 0.75rem;
 }
+
 .ui-timepicker-div dl .ui_tpicker_timezone select {
   margin-left: 50px;
 }
