@@ -546,7 +546,7 @@ class Descriptions
             'OBGzip_desc' => __('Use GZip output buffering for increased speed in HTTP transfers.'),
             'OBGzip_name' => __('GZip output buffering'),
             'Order_desc' => __(
-                '[kbd]SMART[/kbd] - i.e. descending order for columns of type TIME, DATE, '
+                '[code]SMART[/code] - i.e. descending order for columns of type TIME, DATE, '
                 . 'DATETIME and TIMESTAMP, ascending order otherwise.'
             ),
             'Order_name' => __('Default sorting order'),
@@ -584,7 +584,7 @@ class Descriptions
             'RememberSorting_name' => __('Remember table\'s sorting'),
             'TablePrimaryKeyOrder_desc' => __('Default sort order for tables with a primary key.'),
             'TablePrimaryKeyOrder_name' => __('Primary key default sort order'),
-            'RepeatCells_desc' => __('Repeat the headers every X cells, [kbd]0[/kbd] deactivates this feature.'),
+            'RepeatCells_desc' => __('Repeat the headers every X cells, [code]0[/code] deactivates this feature.'),
             'RepeatCells_name' => __('Repeat headers'),
             'GridEditing_name' => __('Grid editing: trigger action'),
             'RelationalDisplay_name' => __('Relational display'),
