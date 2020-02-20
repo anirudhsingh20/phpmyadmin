@@ -1,5 +1,4 @@
 <?php
-/* vim: set expandtab sw=4 ts=4 sts=4: */
 /**
  * Verbose descriptions for settings.
  *
@@ -214,7 +213,7 @@ class Descriptions
             'Export_latex_data_caption_name' => __('Table caption'),
             'Export_latex_data_continued_caption_name' => __('Continued table caption'),
             'Export_latex_data_label_name' => __('Label key'),
-            'Export_latex_mime_name' => __('Media (MIME) type'),
+            'Export_latex_mime_name' => __('Media type'),
             'Export_latex_null_name' => __('Replace NULL with'),
             'Export_latex_relation_name' => __('Relationships'),
             'Export_latex_structure_caption_name' => __('Table caption'),
@@ -226,7 +225,7 @@ class Descriptions
             'Export_ods_null_name' => __('Replace NULL with'),
             'Export_odt_columns_name' => __('Put columns names in the first row'),
             'Export_odt_comments_name' => __('Comments'),
-            'Export_odt_mime_name' => __('Media (MIME) type'),
+            'Export_odt_mime_name' => __('Media type'),
             'Export_odt_null_name' => __('Replace NULL with'),
             'Export_odt_relation_name' => __('Relationships'),
             'Export_odt_structure_or_data_name' => __('Dump table'),
@@ -264,7 +263,7 @@ class Descriptions
             'Export_sql_include_comments_name' => __('Comments'),
             'Export_sql_insert_syntax_name' => __('Syntax to use when inserting data'),
             'Export_sql_max_query_size_name' => __('Maximal length of created query'),
-            'Export_sql_mime_name' => __('Media (MIME) type'),
+            'Export_sql_mime_name' => __('Media type'),
             'Export_sql_procedure_function_name' => sprintf(__('Add %s'), 'CREATE PROCEDURE / FUNCTION / EVENT'),
             'Export_sql_relation_name' => __('Relationships'),
             'Export_sql_structure_or_data_name' => __('Dump table'),
@@ -275,14 +274,15 @@ class Descriptions
             'Export_texytext_null_name' => __('Replace NULL with'),
             'Export_texytext_structure_or_data_name' => __('Dump table'),
             'ForeignKeyDropdownOrder_desc' => __(
-                'Sort order for items in a foreign-key dropdown box; [code]content[/code] is '
-                . 'the referenced data, [code]id[/code] is the key value.'
+                'Sort order for items in a foreign-key dropdown box; [kbd]content[/kbd] is '
+                . 'the referenced data, [kbd]id[/kbd] is the key value.'
             ),
             'ForeignKeyDropdownOrder_name' => __('Foreign key dropdown order'),
             'ForeignKeyMaxLimit_desc' => __('A dropdown will be used if fewer items are present.'),
             'ForeignKeyMaxLimit_name' => __('Foreign key limit'),
             'DefaultForeignKeyChecks_desc' => __('Default value for foreign key checks checkbox for some queries.'),
             'DefaultForeignKeyChecks_name' => __('Foreign key checks'),
+            'FirstDayOfCalendar_name' => __('First day of calendar'),
             'Form_Browse_name' => __('Browse mode'),
             'Form_Browse_desc' => __('Customize browse mode.'),
             'Form_CodeGen_name' => 'CodeGen',
@@ -546,7 +546,7 @@ class Descriptions
             'OBGzip_desc' => __('Use GZip output buffering for increased speed in HTTP transfers.'),
             'OBGzip_name' => __('GZip output buffering'),
             'Order_desc' => __(
-                '[code]SMART[/code] - i.e. descending order for columns of type TIME, DATE, '
+                '[kbd]SMART[/kbd] - i.e. descending order for columns of type TIME, DATE, '
                 . 'DATETIME and TIMESTAMP, ascending order otherwise.'
             ),
             'Order_name' => __('Default sorting order'),
@@ -584,7 +584,7 @@ class Descriptions
             'RememberSorting_name' => __('Remember table\'s sorting'),
             'TablePrimaryKeyOrder_desc' => __('Default sort order for tables with a primary key.'),
             'TablePrimaryKeyOrder_name' => __('Primary key default sort order'),
-            'RepeatCells_desc' => __('Repeat the headers every X cells, [code]0[/code] deactivates this feature.'),
+            'RepeatCells_desc' => __('Repeat the headers every X cells, [kbd]0[/kbd] deactivates this feature.'),
             'RepeatCells_name' => __('Repeat headers'),
             'GridEditing_name' => __('Grid editing: trigger action'),
             'RelationalDisplay_name' => __('Relational display'),
@@ -613,7 +613,7 @@ class Descriptions
             ),
             'Servers_bookmarktable_name' => __('Bookmark table'),
             'Servers_column_info_desc' => __(
-                'Leave blank for no column comments/media (MIME) types, suggested: '
+                'Leave blank for no column comments/media types, suggested: '
                 . '[kbd]pma__column_info[/kbd].'
             ),
             'Servers_column_info_name' => __('Column information table'),
