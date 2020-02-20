@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 /*!
  * jQuery Migrate - v3.1.0 - 2019-06-08
  * Copyright OpenJS Foundation and other contributors
  */
+=======
+/*!
+ * jQuery Migrate - v3.1.0 - 2019-06-08
+ * Copyright OpenJS Foundation and other contributors
+ */
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 ;( function( factory ) {
 	if ( typeof define === "function" && define.amd ) {
 
@@ -21,10 +28,17 @@
 	}
 } )( function( jQuery, window ) {
 "use strict";
+<<<<<<< HEAD
 
 
 jQuery.migrateVersion = "3.1.0";
 
+=======
+
+
+jQuery.migrateVersion = "3.1.0";
+
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 /* exported jQueryVersionSince, compareVersions */
 
 // Returns 0 if v1 == v2, -1 if v1 < v2, 1 if v1 > v2
@@ -47,7 +61,11 @@ function compareVersions( v1, v2 ) {
 function jQueryVersionSince( version ) {
 	return compareVersions( jQuery.fn.jquery, version ) >= 0;
 }
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 /* exported migrateWarn, migrateWarnFunc, migrateWarnProp */
 
 ( function() {
@@ -131,7 +149,11 @@ if ( window.document.compatMode === "BackCompat" ) {
 	// JQuery has never supported or tested Quirks Mode
 	migrateWarn( "jQuery is not compatible with Quirks Mode" );
 }
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 
 var oldInit = jQuery.fn.init,
 	oldIsNumeric = jQuery.isNumeric,
@@ -249,7 +271,11 @@ if ( jQueryVersionSince( "3.2.0" ) ) {
 	migrateWarnFunc( jQuery, "nodeName", jQuery.nodeName,
 	"jQuery.nodeName is deprecated" );
 }
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 
 var oldAjax = jQuery.ajax;
 
@@ -268,7 +294,11 @@ jQuery.ajax = function( ) {
 
 	return jQXHR;
 };
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 
 var oldRemoveAttr = jQuery.fn.removeAttr,
 	oldToggleClass = jQuery.fn.toggleClass,
@@ -317,7 +347,11 @@ jQuery.fn.toggleClass = function( state ) {
 		}
 	} );
 };
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 
 var internalSwapCall = false;
 
@@ -362,7 +396,11 @@ jQuery.swap = function( elem, options, callback, args ) {
 
 	return ret;
 };
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 var oldData = jQuery.data;
 
 jQuery.data = function( elem, name, value ) {
@@ -400,7 +438,11 @@ jQuery.data = function( elem, name, value ) {
 
 	return oldData.apply( this, arguments );
 };
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 var oldTweenRun = jQuery.Tween.prototype.run;
 var linearEasing = function( pct ) {
 		return pct;
@@ -440,7 +482,11 @@ if ( window.requestAnimationFrame ) {
 		}
 	} );
 }
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 var oldLoad = jQuery.fn.load,
 	oldEventAdd = jQuery.event.add,
 	originalFix = jQuery.event.fix;
@@ -570,7 +616,11 @@ jQuery.fn.extend( {
 		return this.on( "mouseenter", fnOver ).on( "mouseleave", fnOut || fnOver );
 	}
 } );
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 
 var oldOffset = jQuery.fn.offset;
 
@@ -592,7 +642,11 @@ jQuery.fn.offset = function() {
 
 	return oldOffset.apply( this, arguments );
 };
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 
 var oldParam = jQuery.param;
 
@@ -607,14 +661,22 @@ jQuery.param = function( data, traditional ) {
 
 	return oldParam.call( this, data, traditional );
 };
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 var oldSelf = jQuery.fn.andSelf || jQuery.fn.addBack;
 
 jQuery.fn.andSelf = function() {
 	migrateWarn( "jQuery.fn.andSelf() is deprecated and removed, use jQuery.fn.addBack()" );
 	return oldSelf.apply( this, arguments );
 };
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 
 var oldDeferred = jQuery.Deferred,
 	tuples = [
@@ -673,6 +735,10 @@ jQuery.Deferred = function( func ) {
 
 // Preserve handler of uncaught exceptions in promise chains
 jQuery.Deferred.exceptionHook = oldDeferred.exceptionHook;
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 6814d65fb0f26f4162854264804d15ce6d4b1f61
 return jQuery;
 } );
